@@ -1,0 +1,359 @@
+/* Trainer Students Page Styles */
+
+.trainer-students-page {
+  padding: 1.5rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Stats */
+.students-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Controls */
+.students-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Students Grid */
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Student Card */
+.student-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.student-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: #f093fb;
+}
+
+.student-card-header {
+  padding: 2rem 1.5rem 1.5rem;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  text-align: center;
+  color: white;
+}
+
+.student-avatar-large {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  margin: 0 auto 1rem;
+  border: 4px solid rgba(255, 255, 255, 0.5);
+}
+
+.student-basic-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.student-goal {
+  margin: 0 0 1rem 0;
+  opacity: 0.9;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-badge.active {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.status-badge.expiring {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-badge.expired {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.student-card-body {
+  padding: 1.5rem;
+}
+
+.info-section {
+  margin-bottom: 1.5rem;
+}
+
+.info-section:last-child {
+  margin-bottom: 0;
+}
+
+.info-section h4 {
+  margin: 0 0 0.75rem 0;
+  color: #111827;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.info-item i {
+  width: 20px;
+  color: #f5576c;
+}
+
+.package-info {
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.package-name {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.package-dates {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.progress-info {
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.progress-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.progress-stat {
+  text-align: center;
+}
+
+.progress-stat .stat-value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f5576c;
+  margin-bottom: 0.25rem;
+}
+
+.progress-stat .stat-label {
+  display: block;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.progress-bar-container {
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%);
+  border-radius: 10px;
+  transition: width 0.6s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.5rem;
+}
+
+.progress-percentage {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: white;
+}
+
+.student-card-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* Modal Detail */
+.student-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.student-avatar-xl {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  border: 4px solid rgba(255, 255, 255, 0.5);
+  flex-shrink: 0;
+}
+
+.student-detail-info h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+}
+
+.student-goal-large {
+  margin: 0 0 1rem 0;
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+.student-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.detail-section.full-width {
+  grid-column: 1 / -1;
+}
+
+.progress-detail {
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.progress-numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.progress-number-item {
+  text-align: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+}
+
+.progress-number-item .number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f5576c;
+  margin-bottom: 0.5rem;
+}
+
+.progress-number-item .label {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.progress-bar-large {
+  height: 20px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill-large {
+  height: 100%;
+  background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  transition: width 0.6s ease;
+}
+
+.progress-fill-large span {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .students-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+
+  .student-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .trainer-students-page {
+    padding: 1rem;
+  }
+
+  .students-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .students-controls {
+    flex-direction: column;
+  }
+
+  .students-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .student-detail-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .progress-numbers {
+    grid-template-columns: 1fr;
+  }
+}

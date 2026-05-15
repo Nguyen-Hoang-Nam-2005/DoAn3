@@ -1,0 +1,115 @@
+/* Trainer Sidebar - Gradient hồng-đỏ (#f093fb → #f5576c) */
+
+.trainer-sidebar {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.trainer-sidebar .sidebar-header {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.trainer-sidebar .logo-icon {
+  background: rgba(255, 255, 255, 0.25);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.trainer-sidebar .logo-name,
+.trainer-sidebar .logo-tagline {
+  color: white;
+}
+
+.trainer-sidebar .sidebar-collapse-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.trainer-sidebar .sidebar-collapse-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.trainer-sidebar.collapsed .sidebar-collapse-btn i {
+  transform: rotate(180deg);
+}
+
+.trainer-sidebar .nav-section-title {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.trainer-sidebar .nav-item a {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.trainer-sidebar .nav-item:hover a {
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.trainer-sidebar .nav-item.active a {
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  border-left: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.trainer-sidebar .back-home-btn {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.trainer-sidebar .back-home-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateX(-5px);
+}
+
+/* Collapsed state */
+.trainer-sidebar.collapsed {
+  width: 80px;
+}
+
+.trainer-sidebar.collapsed .logo-text,
+.trainer-sidebar.collapsed .nav-section-title,
+.trainer-sidebar.collapsed .nav-item span,
+.trainer-sidebar.collapsed .back-home-btn span {
+  display: none;
+}
+
+.trainer-sidebar.collapsed .logo {
+  justify-content: center;
+}
+
+.trainer-sidebar.collapsed .nav-item a {
+  justify-content: center;
+  padding: 1rem;
+}
+
+.trainer-sidebar.collapsed .back-home-btn {
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Scrollbar */
+.trainer-sidebar .sidebar-nav::-webkit-scrollbar {
+  width: 6px;
+}
+
+.trainer-sidebar .sidebar-nav::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.trainer-sidebar .sidebar-nav::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+.trainer-sidebar .sidebar-nav::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}

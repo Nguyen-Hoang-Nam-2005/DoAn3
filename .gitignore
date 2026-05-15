@@ -1,0 +1,46 @@
+# Node
+node_modules/
+dist/
+.env
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+
+# Old folders (already moved to Front End / Back End)
+gym-management-frontend/
+Gym-Management-main/
+
+# Back End - old HTML admin (not needed, using React)
+Back End/admin/
+Back End/User/
+Back End/Gym-Management/
+
+# NuGet cache files
+Back End/**/obj/
+Back End/**/bin/
+
+# Frontend build
+Front End/dist/
+Front End/node_modules/
+Front End/vite-dev.log
+Front End/vite-dev.err.log
+Front End/TRAINER_COMPLETE.md
+Front End/TRAINER_GUIDE.md
+
+# Package lock (optional - can include if you want)
+# Front End/package-lock.json
